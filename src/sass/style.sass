@@ -1,9 +1,12 @@
 $main-color: #1eacc7
-$other-color: #ff5656 
+$other-color: #ff7070
+=btn_hover
+    background-image: none
+    background: $main-color
 
-*
+body
     font-family: 'Roboto', sans-serif
-
+    
 .btn 
     border: none
     border-radius: 4px
@@ -13,6 +16,50 @@ $other-color: #ff5656
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    &:hover
+        +btn_hover
+
+.label
+    position: relative
+    margin: 0 auto
+    height: 24px
+    width: 112px
+    padding: 5px 12px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 300
+    text-transform: uppercase
+    text-align: center
+    z-index: 2
+    &_white 
+        background: #fff
+        color: #000
+
+.title
+    position: relative
+    margin-bottom: 0
+    margin-top: 25px
+    color: #222222
+    font-size: 38px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    z-index: 2
+    &_white 
+        color: #fff
+
+.subtitle
+    position: relative
+    color: #222222
+    font-size: 17px
+    font-weight: 400
+    text-align: center
+    z-index: 2
+    &_white 
+        color: #fff
+       
+        
 
 /* ============Header==========*/
 
@@ -137,34 +184,6 @@ nav
 .reasons
     padding: 71px 0 65px 0
 
-.label
-    margin: 0 auto
-    height: 24px
-    width: 112px
-    padding: 5px 12px
-    background-color: #000000
-    color: #ffffff
-    font-size: 11px
-    font-weight: 300
-    text-transform: uppercase
-    text-align: center
-
-.title
-    margin-bottom: 0
-    margin-top: 25px
-    color: #222222
-    font-size: 38px
-    font-weight: 700
-    text-transform: uppercase
-    text-align: center
-
-.subtitle
-    color: #222222
-    font-size: 17px
-    font-weight: 400
-    text-align: center
-       
-
 .reasons .reasons_block
     display: flex
     justify-content: center
@@ -263,6 +282,37 @@ nav
             &:hover 
                 &:before, &:after 
                     background-color: $other-color
+
+
+    /* ============Choice===========*/
+
+.choice 
+	position: relative
+	min-height: 895px
+	padding: 57px 0 138px 0
+	background: url('../img/app/bg_app.jpg') center center / cover no-repeat
+	&_img 
+		position: relative
+        width: 542px
+        height: 480px
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+        
+	&_descr 
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	.black 
+		position: absolute 
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #070716
+		z-index: 1
             
 				
 
