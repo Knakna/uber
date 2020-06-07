@@ -6,6 +6,7 @@ $other-color: #ff7070
 
 body
     font-family: 'Roboto', sans-serif
+    color: red 
     
 .btn 
     border: none
@@ -293,8 +294,6 @@ nav
 	background: url('../img/app/bg_app.jpg') center center / cover no-repeat
 	&_img 
 		position: relative
-        width: 542px
-        height: 480px
 		display: block
 		margin: 56px auto 0 auto
 		z-index: 2
@@ -346,11 +345,11 @@ nav
 				height: 20px
 				background: url('../icons/check_blue.svg') center (center / cover) no-repeat
 	&_descr 
-		margin: 25px 0 40px 0
+        margin: 25px
         font-size: 17px
-		font-weight: 300
-		line-height: 24px
-		color: #1ca8c3
+        font-weight: 300
+        line-height: 24px
+        color: #1ca8c3
 	.warning 
 		.require_title
 			color: $other-color
@@ -358,6 +357,7 @@ nav
 			li 
 				&:before
 					background: url('../icons/check_red.svg') center (center / cover) no-repeat
+                    
 
 
         
