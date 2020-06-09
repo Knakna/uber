@@ -186,13 +186,13 @@ nav
 .reasons
     padding: 71px 0 65px 0
 
-.reasons .reasons_block
+    &_block
     display: flex
     justify-content: center
     align-items: center
     margin-top: 25px
 
-    .reasons_round
+    &_round
         display: flex
         justify-content: center
         align-items: center
@@ -202,20 +202,20 @@ nav
         background-color: $main-color
         border-radius: 100%
 
-    .reasons_descr
+    &_descr
         width: 343px
 
-        .reasons_subtitle
-            line-height: 21px
-            color: $main-color
-            font-size: 17px
-            font-weight: 400
+    &_subtitle
+        line-height: 21px
+        color: $main-color
+        font-size: 17px
+        font-weight: 400
 
-        .reasons_text
-            color: #202020
-            font-size: 15px
-            font-weight: 300
-            line-height: 21px
+    &_text
+        color: #202020
+        font-size: 15px
+        font-weight: 300
+        line-height: 21px
 
 /* ============Mobile===========*/
 .mobile
@@ -382,12 +382,76 @@ nav
             color: #fff   
 
 /* ============Footer===========*/  
-.footer
+.footer 
 	padding: 14px 23px 39px 23px
 	a 
 		&:hover 
 			text-decoration: none
-                      
+
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+
+            
+    
+                         
 
 
         
